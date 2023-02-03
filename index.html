@@ -1,0 +1,78 @@
+<!DOCTYPE html5>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Calculadora JS</title>
+		<!-- ========== Custom Style.css ========== -->
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<!-- ========== Container Start ========== -->
+		<div class="container">
+			<!-- ========== Calculator Start ========== -->
+			<div class="calculator">
+				<div class="form_container">
+					<form id="form_canculator">
+						<h3>Calculadora JS</h3>
+						<input
+							type="number"
+							class="box"
+							id="nunOne"
+							required
+							placeholder="Ingrese el primer valor"
+						/>
+
+						<input
+							type="number"
+							class="box"
+							id="nunTwo"
+							required
+							placeholder="Ingrese el segundo valor"
+						/>
+
+						<div class="operation">
+							<label for="suma">Sumar</label>
+							<input type="radio" name="select" id="suma" checked />
+
+							<label for="resta">Restar</label>
+							<input type="radio" name="select" id="resta" />
+
+							<label for="mult">Multiplicar</label>
+							<input type="radio" name="select" id="mult" />
+
+							<label for="divide">Dividir</label>
+							<input type="radio" name="select" id="divide" />
+						</div>
+
+						<input
+							type="submit"
+							class="btn btn_calculator"
+							value="Calcular"
+							id="calculator"
+						/>
+						<h4 id="results">Resultado:</h4>
+					</form>
+				</div>
+			</div>
+			<!-- ========== Calculator End ========== -->
+
+			<!-- ========== History Start ========== -->
+			<div class="history">
+				<h1>Historial</h1>
+				<div class="display_history" id="cont_history"></div>
+				<input
+					type="submit"
+					class="btn btn_history"
+					value="Linpiar"
+					id="clear_history"
+				/>
+			</div>
+			<!-- ========== History End ========== -->
+		</div>
+		<!-- ========== Container End ========== -->
+		<!-- ========== Custom Script,js =========-->
+		<script src="js/script.js"></script>
+	</body>
+</html>
